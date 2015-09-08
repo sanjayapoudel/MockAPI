@@ -16,7 +16,7 @@ This framework uses the following node modules.
  Plesae clone the repo from https://github.com/sanjayapoudel/MockAPI 
  
  			1. git clone https://github.com/sanjayapoudel/MockAPI 
- 		   		And please install the following nodules(if required)
+ 		   		And please install the following node modules(if required)
   		  	2. npm install mocha
   		  	3. npm install nock
   			4. npm install request
