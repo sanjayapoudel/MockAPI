@@ -19,18 +19,34 @@ var api = nock(url)
     				email: "Lucio_Hettinger@annie.ca"
   			   })
 			   
+ 			    .put('/posts/1', {
+			      	 			id: 1,
+			       				title: "foo",
+			      	 			body: "bar",
+			       				userId: 1	
+ 			    			})
+			    .reply(200, {
+			       			id: 1,
+			       			title: "foo",
+			       			body: "bar",
+			      	 		userId: 1
+ 			   	 			})
+				
+ 			    .delete('/posts/1')
+			    .reply(204)
+			   
 				.get('/users/11')
                 .reply(404)
 			   
 				.get('/users/12')
                 .reply(500)
 				
- 			    .post('/users/6')
-			    .reply(200, {
-					id: 6,
-  				 	name: "Mrs. Dennis Schulist",
-   					username: "Leopoldo_Corkery",
-   					email: "Karley_Dach@jasper.info"
+ 			    .post('/users/6', { 
+								name: "Mrs. Dennis Schulist", username: "Leopoldo_Corkery"
+								})
+ 			     .reply(201, {
+ 			              ok: true,
+ 			              id: '123ABC',
+ 			              rev: '946B7D1C'
  			   });
   
-			 
