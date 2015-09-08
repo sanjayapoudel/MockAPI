@@ -8,7 +8,7 @@ This framework uses the following node modules.
     http://mochajs.org
  - node_module nock is used for mocking http respose/API calls.
  	https://github.com/pgte/nock
- - request module is used for making http requests to nock service/module.
+ - request module is used for creating/making http requests to nock service/module.
  	https://github.com/request/request
  
  To run the functional tests from inside inside /test/test.js
@@ -18,11 +18,13 @@ This framework uses the following node modules.
   1. npm install mocha
   2. npm install nock
   3. npm install request
-  
-  
   4. from terminal, navigate to /MockAPI directory and hit the following command:
-  	 npm test
-	 
+  	 npm test	 
   5. Done.
+  
+  
+  
+  PS: http://jsonplaceholder.typicode.com is used OPEN APIs and this test suite only include some sample functional tests for various types HTTP requests. It doesn't 
+      cover all the scenarios.
  
  
