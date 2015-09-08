@@ -25,7 +25,7 @@ This framework uses the following node modules.
   		  	6. Done.
   
   
-  PS: http://jsonplaceholder.typicode.com is used for OPEN APIs and this test suite only includes some sample functional tests for various types HTTP requests. It doesn't 
-      cover all the scenarios.
+  PS: http://jsonplaceholder.typicode.com is used for OPEN APIs and this test suite only includes some sample functional 
+      tests for various types HTTP requests(GET, POST, PUT, DELETE). It doesn't cover all the scenarios.
  
  
